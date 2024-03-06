@@ -1,8 +1,9 @@
+//placeholder for projects data
 const PortfolioProjects = [
   {
-    id: 1,
+    id: "1",
     ProjectName: "Umami",
-    techStack: ["React", "Node", "Express", "MongoDB", "Next UI"],
+    TechStack: ["React", "Node", "Express", "MongoDB", "Next UI"],
     Language: "TypeScript",
     ProjectDescription:
       "Umami is a app that helps home chefs to find recipes and create a shopping list.",
@@ -12,9 +13,9 @@ const PortfolioProjects = [
     ],
   },
   {
-    id: 2,
+    id: "2",
     ProjectName: "Raid Encouter Trainer",
-    techStack: [
+    TechStack: [
       "React",
       "Node",
       "Express",
@@ -32,9 +33,9 @@ const PortfolioProjects = [
     ],
   },
   {
-    id: 3,
+    id: "3",
     ProjectName: "Role Playing Game",
-    techStack: [
+    TechStack: [
       "React",
       "Node",
       "Express",
@@ -51,12 +52,23 @@ const PortfolioProjects = [
     ],
   },
   {
-    id: 4,
+    id: "4",
     ProjectName: "Knight's Watch",
-    techStack: ["Dot net Maui", "ASP.Net", "EntityFramework", "SQL", "Xamarin"],
+    TechStack: ["Dot net Maui", "ASP.Net", "EntityFramework", "SQL", "Xamarin"],
     Language: "C#",
     ProjectDescription:
       "A mobile app that helps people to find and report crime in their area.",
+    Links: ["www.google.com", "www.google.com"],
+    ProjectImage: [
+      "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png",
+    ],
+  },
+  {
+    id: "5",
+    ProjectName: "Open Kaban",
+    TechStack: ["React", "Node", "Express", "MongoDB", "Next UI"],
+    Language: "TypeScript",
+    ProjectDescription: "A open source project management tool.",
     Links: ["www.google.com", "www.google.com"],
     ProjectImage: [
       "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png",
