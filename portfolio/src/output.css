@@ -750,6 +750,18 @@ video {
   grid-column-end: 5;
 }
 
+.float-start {
+  float: inline-start;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
 .-m-2 {
   margin: -0.5rem;
 }
@@ -1350,6 +1362,10 @@ video {
   max-width: 20rem;
 }
 
+.max-w-3 {
+  max-width: 0.75rem;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1589,6 +1605,10 @@ video {
 
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.grid-cols-12 {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -6721,6 +6741,14 @@ code {
     margin-bottom: 4rem;
   }
 
+  .sm\:hidden {
+    display: none;
+  }
+
+  .sm\:flex-col {
+    flex-direction: column;
+  }
+
   .sm\:items-start {
     align-items: flex-start;
   }
@@ -6755,6 +6783,22 @@ code {
 
   .group[data-hover=true] .sm\:group-data-\[hover\=true\]\:data-\[visible\=true\]\:opacity-100[data-visible=true] {
     opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:flex-col {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:flex-row {
+    flex-direction: row;
   }
 }
 

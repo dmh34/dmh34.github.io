@@ -8,9 +8,7 @@ const PortfolioProjects = [
     ProjectDescription:
       "Umami is a app that helps home chefs to find recipes and create a shopping list.",
     Links: ["www.google.com", "www.google.com"],
-    ProjectImage: [
-      "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png",
-    ],
+    ProjectImage: ["https://placehold.co/200"],
   },
   {
     id: "2",
@@ -28,9 +26,7 @@ const PortfolioProjects = [
     ProjectDescription:
       "Raid Encounter Trainer is a app that helps gamers to learn and practice raid encounters in Final Fantasy 14.",
     Links: ["www.google.com", "www.google.com"],
-    ProjectImage: [
-      "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png",
-    ],
+    ProjectImage: ["https://placehold.co/200"],
   },
   {
     id: "3",
@@ -47,9 +43,7 @@ const PortfolioProjects = [
     ProjectDescription:
       "A basic role playing game with turn based startegy elements.",
     Links: ["www.google.com", "www.google.com"],
-    ProjectImage: [
-      "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png",
-    ],
+    ProjectImage: ["https://placehold.co/200"],
   },
   {
     id: "4",
@@ -59,9 +53,7 @@ const PortfolioProjects = [
     ProjectDescription:
       "A mobile app that helps people to find and report crime in their area.",
     Links: ["www.google.com", "www.google.com"],
-    ProjectImage: [
-      "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png",
-    ],
+    ProjectImage: ["https://placehold.co/200"],
   },
   {
     id: "5",
@@ -70,9 +62,7 @@ const PortfolioProjects = [
     Language: "TypeScript",
     ProjectDescription: "A open source project management tool.",
     Links: ["www.google.com", "www.google.com"],
-    ProjectImage: [
-      "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png",
-    ],
+    ProjectImage: ["https://placehold.co/200"],
   },
 ];
 

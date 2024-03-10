@@ -1,20 +1,23 @@
+import { Card, CardFooter, Image } from "@nextui-org/react";
 import PortfolioProjects from "../util/projects.util";
 
 function Projects() {
   //TODO: Replace placeholder code with actual project UI
   return (
-    <div>
-      <h1>Projects</h1>
-      <div>
-        {PortfolioProjects.map((project) => (
-          <div key={project.id}>
-            <h2>{project.ProjectName}</h2>
-            <p>{project.ProjectDescription}</p>
-            <a href={project.Links[0]}>{project.Links[1]}</a>
-            <img src={project.ProjectImage[0]} alt={project.ProjectImage[1]} />
-          </div>
-        ))}
-      </div>
+    <div className=" flex gap-3 sm:flex-col md:flex-row">
+      {PortfolioProjects.map((project) => (
+        <Card key={project.id} isFooterBlurred isHoverable>
+          <Image
+            src={project.ProjectImage[0]}
+            alt={project.ProjectImage[1]}
+            width={300}
+            height={300}
+          />
+          <CardFooter>
+            <h4>{project.ProjectName}</h4>
+          </CardFooter>
+        </Card>
+      ))}
     </div>
   );
 }

@@ -14,17 +14,18 @@ function About() {
   return (
     <div className="grid grid-cols-5">
       <Navbar isBlurred maxWidth="full" className="col-span-full">
-        <NavbarBrand>
-          <User
-            name={AboutData.Name}
-            description="Web Dev"
-            avatarProps={{
-              src: "https://i.pravatar.cc/150?u=a04258114e29026702d",
-              size: "lg",
-            }}
-          />
-        </NavbarBrand>
-        <NavbarContent>
+        <NavbarBrand className="md: hidden">Jane Doe</NavbarBrand>
+        <NavbarContent className="fl">
+          <NavbarItem>
+            <User
+              name={AboutData.Name}
+              description="Web Dev"
+              avatarProps={{
+                src: "https://i.pravatar.cc/150?u=a04258114e29026702d",
+                size: "lg",
+              }}
+            />
+          </NavbarItem>
           <div className="flex gap-2">
             <NavbarItem className="col-start-1">
               <Link to="/projects">Projects</Link>
