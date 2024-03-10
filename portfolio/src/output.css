@@ -710,6 +710,13 @@ video {
   z-index: 50;
 }
 
+<<<<<<< HEAD
+=======
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
+>>>>>>> 066ac8f801b85d716157ae149f094c2a5cdfde29
 .col-span-5 {
   grid-column: span 5 / span 5;
 }
@@ -718,10 +725,13 @@ video {
   grid-column: 1 / -1;
 }
 
+<<<<<<< HEAD
 .col-start-1 {
   grid-column-start: 1;
 }
 
+=======
+>>>>>>> 066ac8f801b85d716157ae149f094c2a5cdfde29
 .col-start-2 {
   grid-column-start: 2;
 }
@@ -734,12 +744,21 @@ video {
   grid-column-start: 4;
 }
 
+<<<<<<< HEAD
 .col-end-2 {
   grid-column-end: 2;
 }
 
 .col-end-3 {
   grid-column-end: 3;
+=======
+.col-start-5 {
+  grid-column-start: 5;
+}
+
+.col-start-1 {
+  grid-column-start: 1;
+>>>>>>> 066ac8f801b85d716157ae149f094c2a5cdfde29
 }
 
 .col-end-4 {
@@ -750,6 +769,17 @@ video {
   grid-column-end: 5;
 }
 
+<<<<<<< HEAD
+=======
+.col-end-3 {
+  grid-column-end: 3;
+}
+
+.col-end-2 {
+  grid-column-end: 2;
+}
+
+>>>>>>> 066ac8f801b85d716157ae149f094c2a5cdfde29
 .-m-2 {
   margin: -0.5rem;
 }
@@ -1583,6 +1613,13 @@ video {
           appearance: none;
 }
 
+<<<<<<< HEAD
+=======
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+>>>>>>> 066ac8f801b85d716157ae149f094c2a5cdfde29
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -1591,6 +1628,13 @@ video {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
+<<<<<<< HEAD
+=======
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+>>>>>>> 066ac8f801b85d716157ae149f094c2a5cdfde29
 .flex-row {
   flex-direction: row;
 }
@@ -1687,6 +1731,17 @@ video {
   gap: var(--nextui-spacing-unit-3);
 }
 
+<<<<<<< HEAD
+=======
+.gap-7 {
+  gap: 1.75rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+>>>>>>> 066ac8f801b85d716157ae149f094c2a5cdfde29
 .space-x-0 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0px * var(--tw-space-x-reverse));
@@ -3053,8 +3108,23 @@ video {
 
 :root,.light,[data-theme="light"] {
   color-scheme: light;
+<<<<<<< HEAD
   --nextui-background: 230 33% 7%;
   --nextui-foreground: 0 0% 100%;
+=======
+  --nextui-background: 0 0% 100%;
+  --nextui-foreground-50: 0 0% 98%;
+  --nextui-foreground-100: 240 5% 96%;
+  --nextui-foreground-200: 240 6% 90%;
+  --nextui-foreground-300: 240 5% 84%;
+  --nextui-foreground-400: 240 5% 65%;
+  --nextui-foreground-500: 240 4% 46%;
+  --nextui-foreground-600: 240 5% 34%;
+  --nextui-foreground-700: 240 5% 26%;
+  --nextui-foreground-800: 240 4% 16%;
+  --nextui-foreground-900: 240 6% 10%;
+  --nextui-foreground: 202 24% 9%;
+>>>>>>> 066ac8f801b85d716157ae149f094c2a5cdfde29
   --nextui-divider: 0 0% 7%;
   --nextui-divider-opacity: 0.15;
   --nextui-focus: 212 100% 47%;
@@ -3079,8 +3149,35 @@ video {
   --nextui-default-900: 240 6% 10%;
   --nextui-default-foreground: 0 0% 0%;
   --nextui-default: 240 5% 84%;
+<<<<<<< HEAD
   --nextui-primary: 227 34% 73%;
   --nextui-secondary: 249 35% 33%;
+=======
+  --nextui-primary-50: 213 92% 95%;
+  --nextui-primary-100: 212 92% 90%;
+  --nextui-primary-200: 212 92% 79%;
+  --nextui-primary-300: 212 92% 69%;
+  --nextui-primary-400: 212 92% 58%;
+  --nextui-primary-500: 212 100% 47%;
+  --nextui-primary-600: 212 100% 38%;
+  --nextui-primary-700: 212 100% 29%;
+  --nextui-primary-800: 212 100% 19%;
+  --nextui-primary-900: 212 100% 10%;
+  --nextui-primary-foreground: 0 0% 100%;
+  --nextui-primary: 212 100% 47%;
+  --nextui-secondary-50: 270 62% 95%;
+  --nextui-secondary-100: 270 59% 89%;
+  --nextui-secondary-200: 270 59% 79%;
+  --nextui-secondary-300: 270 59% 68%;
+  --nextui-secondary-400: 270 59% 58%;
+  --nextui-secondary-500: 270 67% 47%;
+  --nextui-secondary-600: 270 67% 38%;
+  --nextui-secondary-700: 270 67% 28%;
+  --nextui-secondary-800: 270 67% 19%;
+  --nextui-secondary-900: 270 67% 9%;
+  --nextui-secondary-foreground: 0 0% 100%;
+  --nextui-secondary: 270 67% 47%;
+>>>>>>> 066ac8f801b85d716157ae149f094c2a5cdfde29
   --nextui-success-50: 147 64% 95%;
   --nextui-success-100: 146 61% 89%;
   --nextui-success-200: 146 62% 77%;
@@ -3117,7 +3214,10 @@ video {
   --nextui-danger-900: 340 85% 10%;
   --nextui-danger-foreground: 0 0% 100%;
   --nextui-danger: 339 90% 51%;
+<<<<<<< HEAD
   --nextui-accent: 258 34% 58%;
+=======
+>>>>>>> 066ac8f801b85d716157ae149f094c2a5cdfde29
   --nextui-spacing-unit: 4px;
   --nextui-spacing-unit-0: 0px;
   --nextui-spacing-unit-1: 0.25rem;
