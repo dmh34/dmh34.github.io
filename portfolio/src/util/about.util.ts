@@ -1,6 +1,6 @@
 //Placeholder data for the about page
 const AboutData = {
-  Name: "User",
+  Name: "Jane Doe",
   ProgrammingLang: [
     "Javascript",
     "Typescript",
