@@ -1,22 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
+import "./output.css";
+
 import reportWebVitals from "./reportWebVitals";
-import About from "../src/screens/About.screens";
-import Projects from "./screens/Projects.screens";
-import appRouter from "./util/approuter.util";
+import { NextUIProvider } from "@nextui-org/react";
 import { RouterProvider } from "react-router-dom";
+import appRouter from "./util/approuter.util";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement,
 );
 root.render(
   <React.StrictMode>
-    <RouterProvider router={appRouter} />
-    <App />
-    <About />
-    <Projects />
+    <NextUIProvider>
+      <RouterProvider router={appRouter} />
+    </NextUIProvider>
   </React.StrictMode>,
 );
 

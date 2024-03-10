@@ -1,11 +1,4 @@
 import PortfolioProjects from "../util/projects.util";
-interface ProjectProps {
-  id: number;
-  name: string;
-  description: string;
-  link: string[];
-  image: string[];
-}
 
 function Projects() {
   //TODO: Replace placeholder code with actual project UI
