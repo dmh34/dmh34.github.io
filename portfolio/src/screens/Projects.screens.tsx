@@ -1,23 +1,37 @@
-import { Card, CardFooter, Image } from "@nextui-org/react";
+import { Card, CardFooter, CardHeader, Image } from "@nextui-org/react";
 import PortfolioProjects from "../util/projects.util";
+import { Link, useNavigate } from "react-router-dom";
+import Nav from "../components/Nav.component";
 
 function Projects() {
+
   //TODO: Replace placeholder code with actual project UI
+  
+  
   return (
+    <div>
+      <Nav />
+
     <div className=" flex gap-3 sm:flex-col md:flex-row">
       {PortfolioProjects.map((project) => (
-        <Card key={project.id} isFooterBlurred isHoverable>
+        <Link to={`/project/${project.id}`} key={project.id}>
+        <Card key={project.id} isFooterBlurred  isPressable className="bg-secondary " >
+          <CardHeader >
+            <h3>{project.ProjectName}</h3>
+          </CardHeader>
           <Image
             src={project.ProjectImage[0]}
             alt={project.ProjectImage[1]}
             width={300}
             height={300}
           />
-          <CardFooter>
+          {/* <CardFooter className="hidden hover:visible">
             <h4>{project.ProjectName}</h4>
-          </CardFooter>
+          </CardFooter> */}
         </Card>
+        </Link>
       ))}
+    </div>
     </div>
   );
 }

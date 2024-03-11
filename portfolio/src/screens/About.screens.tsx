@@ -9,11 +9,12 @@ import {
 } from "@nextui-org/react";
 import { Link } from "react-router-dom";
 import "../../src/output.css";
+import Nav from "../components/Nav.component";
 
 function About() {
   return (
     <div className="grid grid-cols-5">
-      <Navbar isBlurred maxWidth="full" className="col-span-full">
+      {/* <Navbar isBlurred maxWidth="full" className="col-span-full">
         <NavbarBrand className="md: hidden">Jane Doe</NavbarBrand>
         <NavbarContent className="fl">
           <NavbarItem>
@@ -35,8 +36,10 @@ function About() {
             </NavbarItem>
           </div>
         </NavbarContent>
-      </Navbar>
-
+      </Navbar> */}
+      <div className="col-span-full">
+        <Nav />
+      </div>
       <div className="col-span-5 flex justify-center"></div>
       <div className="col-span-5 flex justify-center">
         <h2>About</h2>
@@ -45,7 +48,7 @@ function About() {
         <p>{AboutData.BrandStatment}</p>
       </div>
       <div className="col-start-2 col-end-2 flex justify-center">
-        <ul>
+        <ul className="">
           {AboutData.ProgrammingLang.map((language) => (
             <li key={language}>{language}</li>
           ))}

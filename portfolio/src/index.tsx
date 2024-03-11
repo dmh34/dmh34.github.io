@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { NextUIProvider } from "@nextui-org/react";
 import { RouterProvider } from "react-router-dom";
 import appRouter from "./util/approuter.util";
+import Nav from "./components/Nav.component";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement,
