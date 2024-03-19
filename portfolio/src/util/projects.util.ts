@@ -2,6 +2,7 @@
 const PortfolioProjects = [
   {
     id: "1",
+    category: ["Web"],
     ProjectName: "Umami",
     TechStack: ["React", "Node", "Express", "MongoDB", "Next UI"],
     Language: "TypeScript",
@@ -12,6 +13,7 @@ const PortfolioProjects = [
   },
   {
     id: "2",
+    category: ["Game", "Web"],
     ProjectName: "Raid Encouter Trainer",
     TechStack: [
       "React",
@@ -30,6 +32,7 @@ const PortfolioProjects = [
   },
   {
     id: "3",
+    category: ["Game", "Web"],
     ProjectName: "Role Playing Game",
     TechStack: [
       "React",
@@ -47,6 +50,7 @@ const PortfolioProjects = [
   },
   {
     id: "4",
+    category: ["Desktop", "Mobile"],
     ProjectName: "Knight's Watch",
     TechStack: ["Dot net Maui", "ASP.Net", "EntityFramework", "SQL", "Xamarin"],
     Language: "C#",
@@ -57,10 +61,51 @@ const PortfolioProjects = [
   },
   {
     id: "5",
+    category: ["Web"],
     ProjectName: "Open Kaban",
     TechStack: ["React", "Node", "Express", "MongoDB", "Next UI"],
     Language: "TypeScript",
     ProjectDescription: "A open source project management tool.",
+    Links: ["www.google.com", "www.google.com"],
+    ProjectImage: ["https://placehold.co/200"],
+  },
+  {
+    id: "6",
+    category: ["Music"],
+    ProjectName: "Music Player",
+    TechStack: [],
+    Language: "",
+    ProjectDescription: "Djent Ablum",
+    Links: ["www.google.com", "www.google.com"],
+    ProjectImage: ["https://placehold.co/200"],
+  },
+  {
+    id: "7",
+    category: ["3D Art"],
+    ProjectName: "3D Model",
+    TechStack: [],
+    Language: "",
+    ProjectDescription: "3D Model of a car",
+    Links: ["www.google.com", "www.google.com"],
+    ProjectImage: ["https://placehold.co/200"],
+  },
+  {
+    id: "8",
+    category: ["Game"],
+    ProjectName: "Game",
+    TechStack: ["Unity", "C#"],
+    Language: "C#",
+    ProjectDescription: "A basic game",
+    Links: ["www.google.com", "www.google.com"],
+    ProjectImage: ["https://placehold.co/200"],
+  },
+  {
+    id: "9",
+    category: ["Game"],
+    ProjectName: "Game",
+    TechStack: ["Unreal Engine", "C++"],
+    Language: "C++",
+    ProjectDescription: "A basic game",
     Links: ["www.google.com", "www.google.com"],
     ProjectImage: ["https://placehold.co/200"],
   },

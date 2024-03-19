@@ -1,31 +1,28 @@
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, User } from "@nextui-org/react";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+} from "@nextui-org/react";
 import { Link } from "react-router-dom";
-import AboutData from "../util/about.util";
 
 function Nav() {
   return (
     <div>
-     <Navbar isBlurred maxWidth="full" className="bg-gradient-to-bl">
-        <NavbarBrand >Jane Doe</NavbarBrand>
-        <NavbarContent className="float-end">
-          <NavbarItem>
-            <User
-              name={AboutData.Name}
-              description="Web Dev"
-              avatarProps={{
-                src: "https://i.pravatar.cc/150?u=a04258114e29026702d",
-                size: "lg",
-              }}
-            />
+      <Navbar
+        isBlurred
+        maxWidth="full"
+        className="shadow-primary shadow-md"
+        isBordered
+      >
+        <NavbarBrand className="flex">Jane Doe</NavbarBrand>
+        <NavbarContent justify="center">
+          <NavbarItem className="flex flex-grow justify-center gap-4">
+            <Link to="/projects">Portfolio</Link>
           </NavbarItem>
-          <div className="flex gap-2">
-            <NavbarItem className="col-start-1">
-              <Link to="/projects">Projects</Link>
-            </NavbarItem>
-            <NavbarItem className="col-start-2">
-              <Link to="/">About</Link>
-            </NavbarItem>
-          </div>
+          <NavbarItem>
+            <Link to="/">About</Link>
+          </NavbarItem>
         </NavbarContent>
       </Navbar>
     </div>

@@ -15,5 +15,4 @@ function SkillDisplay(skill: SkillDisplayProps) {
     </div>
   );
 }
-
 export default SkillDisplay;

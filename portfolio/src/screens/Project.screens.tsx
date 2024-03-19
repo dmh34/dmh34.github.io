@@ -3,6 +3,8 @@ import { useNavigate, useParams } from "react-router-dom";
 import PortfolioProjects from "../util/projects.util";
 import Nav from "../components/Nav.component";
 import { Button, Divider, Image } from "@nextui-org/react";
+import { ReactComponent as GithubIcon } from "../assests/GithubIcon.svg";
+import { ReactComponent as AppIcon } from "../assests/AppIcon.svg";
 
 interface ProjectState {
   id: string;
@@ -25,20 +27,20 @@ function Project() {
   }, [id]);
   return (
     <div>
-      <div className="grid grid-cols-10 z gap-4">
+      <div className="z grid grid-cols-10 gap-4">
         <div className="col-span-10">
           <Nav />
         </div>
-        <div className="flex col-span-10 justify-center gap-2">
+        <div className="col-span-10 flex justify-center gap-2">
           <h1 className="text-2xl">{project?.ProjectName}</h1>
-          <Button className="rounded-2xl"> Github</Button>{" "}
-          {
-            //TODO: Add link to github Replace with logo
-          }
-          <Button className="rounded-2xl">App</Button>{" "}
-          {
-            //TODO: Add link to live site Replace with logo
-          }
+        </div>
+        <div className="col-span-10 flex justify-center gap-2">
+          <Button className=" bg-primary rounded-full">
+            <GithubIcon />
+          </Button>
+          <Button className="bg-primary rounded-full">
+            <AppIcon />
+          </Button>
         </div>
         <div className="col-span-10">
           <Divider className="w-full bg-white" />
@@ -51,28 +53,33 @@ function Project() {
         <div className="col-span-5 flex justify-center">
           <p>{project?.ProjectDescription}</p>
         </div>
-        <div className="col-start-6 col-span-2">
+        <div className="col-span-2 col-start-6">
           <p className="block">Tech Stack:</p>
           <ul className="text-right">
             {project?.TechStack.map((tech) => (
-              <li key={tech}>{tech}</li>
+              <li key={project?.id}>{tech}</li>
             ))}
           </ul>
         </div>
-        <div className="col-start-8 col-span-2">
+        <div className="col-span-2 col-start-8">
           <p className="block">Languages:</p>
           <ul className="text-right">
-            <li>{project?.Language}</li>
+            <li key={project?.id}>{project?.Language}</li>
           </ul>
-          </div>
+        </div>
 
-        <div className=" col-start-6 col-span-5 flex justify-center">
+        <div className=" col-span-5 col-start-6 flex justify-center">
           {project?.ProjectImage.map((image) => (
             <Image className="rounded-md" src={image} alt="project" />
           ))}
         </div>
-        <div className="flex col-span-10 justify-center gap-3">
-          <Button onClick={() => navigate("/projects")}>Back</Button>
+        <div className=" col-span-10 flex justify-center gap-3">
+          <Button
+            className="bg-primary rounded-full"
+            onClick={() => navigate("/projects")}
+          >
+            Back
+          </Button>
         </div>
       </div>
     </div>
