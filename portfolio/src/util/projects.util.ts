@@ -9,7 +9,11 @@ const PortfolioProjects = [
     ProjectDescription:
       "Umami is a app that helps home chefs to find recipes and create a shopping list.",
     Links: ["www.google.com", "www.google.com"],
-    ProjectImage: ["https://placehold.co/200"],
+    ProjectImage: [
+      "https://placehold.co/200",
+      "https://placehold.co/200",
+      "https://placehold.co/200",
+    ],
   },
   {
     id: "2",
@@ -28,7 +32,12 @@ const PortfolioProjects = [
     ProjectDescription:
       "Raid Encounter Trainer is a app that helps gamers to learn and practice raid encounters in Final Fantasy 14.",
     Links: ["www.google.com", "www.google.com"],
-    ProjectImage: ["https://placehold.co/200"],
+    ProjectImage: [
+      "https://placehold.co/200",
+      "https://placehold.co/200",
+      "https://placehold.co/200",
+      "https://placehold.co/200",
+    ],
   },
   {
     id: "3",
@@ -46,7 +55,13 @@ const PortfolioProjects = [
     ProjectDescription:
       "A basic role playing game with turn based startegy elements.",
     Links: ["www.google.com", "www.google.com"],
-    ProjectImage: ["https://placehold.co/200"],
+    ProjectImage: [
+      "https://placehold.co/200",
+      "https://placehold.co/200",
+      "https://placehold.co/200",
+      "https://placehold.co/200",
+      "https://placehold.co/200",
+    ],
   },
   {
     id: "4",
@@ -57,7 +72,12 @@ const PortfolioProjects = [
     ProjectDescription:
       "A mobile app that helps people to find and report crime in their area.",
     Links: ["www.google.com", "www.google.com"],
-    ProjectImage: ["https://placehold.co/200"],
+    ProjectImage: [
+      "https://placehold.co/200",
+      "https://placehold.co/200",
+      "https://placehold.co/200",
+      "https://placehold.co/200",
+    ],
   },
   {
     id: "5",
@@ -67,7 +87,7 @@ const PortfolioProjects = [
     Language: "TypeScript",
     ProjectDescription: "A open source project management tool.",
     Links: ["www.google.com", "www.google.com"],
-    ProjectImage: ["https://placehold.co/200"],
+    ProjectImage: ["https://placehold.co/200", "https://placehold.co/200"],
   },
   {
     id: "6",
@@ -77,7 +97,14 @@ const PortfolioProjects = [
     Language: "",
     ProjectDescription: "Djent Ablum",
     Links: ["www.google.com", "www.google.com"],
-    ProjectImage: ["https://placehold.co/200"],
+    ProjectImage: [
+      "https://placehold.co/200",
+      "https://placehold.co/200",
+      "https://placehold.co/200",
+      "https://placehold.co/200",
+      "https://placehold.co/200",
+      "https://placehold.co/200",
+    ],
   },
   {
     id: "7",
@@ -97,7 +124,7 @@ const PortfolioProjects = [
     Language: "C#",
     ProjectDescription: "A basic game",
     Links: ["www.google.com", "www.google.com"],
-    ProjectImage: ["https://placehold.co/200"],
+    ProjectImage: ["https://placehold.co/200", "https://placehold.co/200"],
   },
   {
     id: "9",

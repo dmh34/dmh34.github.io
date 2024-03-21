@@ -24,20 +24,20 @@ function Projects() {
               key={project.id}
               isFooterBlurred
               isPressable
-              className="bg-secondary "
+              className="bg-primary "
             >
-              <CardHeader>
+              {/* <CardHeader>
                 <h3>{project.ProjectName}</h3>
-              </CardHeader>
+              </CardHeader> */}
               <Image
                 src={project.ProjectImage[0]}
                 alt={project.ProjectImage[1]}
                 width={300}
                 height={300}
               />
-              {/* <CardFooter className="">
+              <CardFooter className="bg-primary  absolute bottom-3 z-10 justify-center rounded-md opacity-85">
                 <h4>{project.ProjectName}</h4>
-              </CardFooter> */}
+              </CardFooter>
             </Card>
           </Link>
         ))}

@@ -1,6 +1,15 @@
 //Placeholder data for the about page
 const AboutData = {
   Name: "Jane Doe",
+  Title: "Full Stack Developer",
+  LinkedIn: "www.google.com",
+  GitHub: "www.google.com",
+  YouTube: "www.google.com",
+  Twitter: "www.google.com",
+  Twitch: "www.google.com",
+  Instagram: "www.google.com",
+  Facebook: "www.google.com",
+  Rumble: "www.google.com",
   ProgrammingLang: [
     "Javascript",
     "Typescript",

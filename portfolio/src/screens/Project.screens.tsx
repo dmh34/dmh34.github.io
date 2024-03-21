@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import PortfolioProjects from "../util/projects.util";
 import Nav from "../components/Nav.component";
-import { Button, Divider, Image } from "@nextui-org/react";
+import { Button, Chip, Divider, Image } from "@nextui-org/react";
 import { ReactComponent as GithubIcon } from "../assests/GithubIcon.svg";
+
 import { ReactComponent as AppIcon } from "../assests/AppIcon.svg";
 
 interface ProjectState {
@@ -27,33 +28,43 @@ function Project() {
   }, [id]);
   return (
     <div>
-      <div className="z grid grid-cols-10 gap-4">
+      <div className=" grid grid-cols-10 gap-4">
         <div className="col-span-10">
           <Nav />
         </div>
-        <div className="col-span-10 flex justify-center gap-2">
-          <h1 className="text-2xl">{project?.ProjectName}</h1>
+        <div className=" col-span-10 flex justify-center">
+          <h1 className="text-3xl">{project?.ProjectName}</h1>
         </div>
         <div className="col-span-10 flex justify-center gap-2">
-          <Button className=" bg-primary rounded-full">
+          <Chip color="primary" className="rounded-full">
+            {project?.Language}
+          </Chip>
+          {project?.TechStack.map((tech) => (
+            <Chip color="primary" className="rounded-full">
+              {tech}
+            </Chip>
+          ))}
+        </div>
+        <div className="col-span-10 flex justify-center gap-2">
+          <Button className=" bg-primary   rounded-full ">
             <GithubIcon />
           </Button>
-          <Button className="bg-primary rounded-full">
+          <Button className="bg-primary  rounded-full ">
             <AppIcon />
           </Button>
         </div>
         <div className="col-span-10">
-          <Divider className="w-full bg-white" />
+          <Divider className="bg-primary w-full" />
         </div>
         <div className="col-span-10">
           <div className="flex justify-center gap-3">
-            <h2>About Project</h2>
+            <h2 className="text-xl">About Project</h2>
           </div>
         </div>
-        <div className="col-span-5 flex justify-center">
+        <div className="col-span-10 flex justify-center">
           <p>{project?.ProjectDescription}</p>
         </div>
-        <div className="col-span-2 col-start-6">
+        {/* <div className="col-span-2 col-start-6">
           <p className="block">Tech Stack:</p>
           <ul className="text-right">
             {project?.TechStack.map((tech) => (
@@ -66,9 +77,9 @@ function Project() {
           <ul className="text-right">
             <li key={project?.id}>{project?.Language}</li>
           </ul>
-        </div>
+        </div> */}
 
-        <div className=" col-span-5 col-start-6 flex justify-center">
+        <div className=" col-span-10 flex justify-center gap-4">
           {project?.ProjectImage.map((image) => (
             <Image className="rounded-md" src={image} alt="project" />
           ))}
