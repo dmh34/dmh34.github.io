@@ -36,8 +36,9 @@ function Project() {
           <h1 className="text-3xl">{project?.ProjectName}</h1>
         </div>
         <div className="col-span-10 flex justify-center gap-2">
+          {/*TODO: Add project category filtering, add conditional rendering for chips*/}
           <Chip color="primary" className="rounded-full">
-            {project?.Language}
+            {project?.Language? project?.Language : null}
           </Chip>
           {project?.TechStack.map((tech) => (
             <Chip color="primary" className="rounded-full">

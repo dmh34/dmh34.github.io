@@ -24,12 +24,12 @@ function Projects() {
               key={project.id}
               isFooterBlurred
               isPressable
-              className="bg-primary "
+              className="bg-primary rounded-full shadow-primary shadow-xl hover:shadow-none"
             >
               {/* <CardHeader>
                 <h3>{project.ProjectName}</h3>
               </CardHeader> */}
-              <Image
+              <Image className="rounded-full"
                 src={project.ProjectImage[0]}
                 alt={project.ProjectImage[1]}
                 width={300}
