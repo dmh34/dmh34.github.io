@@ -136,6 +136,16 @@ const PortfolioProjects = [
     Links: ["www.google.com", "www.google.com"],
     ProjectImage: ["https://placehold.co/200"],
   },
+  {
+    id: "10",
+    category: ["Music"],
+    ProjectName: "Music II",
+    TechStack: [],
+    Language: "",
+    ProjectDescription: "D & D concept album",
+    Links: ["www.google.com", "www.google.com"],
+    ProjectImage: ["https://placehold.co/200"],
+  },
 ];
 
 export default PortfolioProjects;

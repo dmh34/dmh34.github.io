@@ -46,10 +46,13 @@ function Project() {
           ))}
         </div>
         <div className="col-span-10 flex justify-center gap-2">
-          <Button className=" bg-primary   rounded-full ">
+          <Button isIconOnly className=" bg-primary   rounded-full ">
             <GithubIcon />
           </Button>
-          <Button className="bg-primary  rounded-full ">
+          <Button
+            isIconOnly
+            className="bg-primary  shadow-primary rounded-full shadow-sm"
+          >
             <AppIcon />
           </Button>
         </div>

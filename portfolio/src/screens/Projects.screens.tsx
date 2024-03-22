@@ -17,7 +17,7 @@ function Projects() {
     <div className="">
       <Nav />
 
-      <div className=" flex flex-wrap gap-3 p-4 sm:flex-col md:flex-row">
+      <div className=" flex flex-wrap justify-center gap-3 p-4 sm:flex-col md:flex-row">
         {PortfolioProjects.map((project) => (
           <Link to={`/project/${project.id}`} key={project.id}>
             <Card
