@@ -13,6 +13,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <NextUIProvider>
+      {/* TODO: make the app respnsive */}
       <RouterProvider router={appRouter} />
     </NextUIProvider>
   </React.StrictMode>,

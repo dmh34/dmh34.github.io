@@ -6,6 +6,7 @@ import { Button, Chip, Divider, Image } from "@nextui-org/react";
 import { ReactComponent as GithubIcon } from "../assests/GithubIcon.svg";
 
 import { ReactComponent as AppIcon } from "../assests/AppIcon.svg";
+import TechStack from "../components/TechStack.component";
 
 interface ProjectState {
   id: string;
@@ -38,16 +39,17 @@ function Project() {
         <div className="col-span-10 flex justify-center gap-2">
           {/*TODO: Add project category filtering, add conditional rendering for chips*/}
           <Chip color="primary" className="rounded-full">
-            {project?.Language? project?.Language : null}
+            {project?.Language ? project?.Language : null}
           </Chip>
-          {project?.TechStack.map((tech) => (
+          {/* {project?.TechStack.map((tech) => (
             <Chip color="primary" className="rounded-full">
               {tech}
             </Chip>
-          ))}
+          ))} */}
+          <TechStack TechStack={project?.TechStack} />
         </div>
         <div className="col-span-10 flex justify-center gap-2">
-          <Button isIconOnly className=" bg-primary   rounded-full ">
+          <Button isIconOnly className=" bg-primary rounded-full ">
             <GithubIcon />
           </Button>
           <Button

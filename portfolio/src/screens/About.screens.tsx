@@ -8,6 +8,7 @@ import { ReactComponent as LinkedinIcon } from "../assests/LinkedinIcon.svg";
 import { ReactComponent as TwitchIcon } from "../assests/TwitchIcon.svg";
 import { ReactComponent as TwitterIcon } from "../assests/TwitterIcon.svg";
 import { ReactComponent as YoutubeIcon } from "../assests/YoutubeIcon.svg";
+import { ReactComponent as RumbleIcon } from "../assests/RumbleIcon.svg";
 import Nav from "../components/Nav.component";
 import AboutData from "../util/about.util";
 
@@ -26,6 +27,7 @@ function About() {
           className=" shadow-primary h-48 w-48 shadow-md"
         />
       </div>
+
       <div className="col-span-5 flex justify-center gap-4">
         <Button
           isIconOnly
@@ -57,7 +59,12 @@ function About() {
         >
           <YoutubeIcon />
         </Button>
-        {/* <Button className="bg-primary rounded-full">Rumble</Button> */}
+        <Button
+          isIconOnly
+          className="bg-primary shadow-primary rounded-full shadow-xl hover:shadow-none"
+        >
+          <RumbleIcon />
+        </Button>
         <Button
           isIconOnly
           className="bg-primary shadow-primary rounded-full shadow-xl hover:shadow-none"

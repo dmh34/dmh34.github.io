@@ -4,7 +4,7 @@ module.exports = {
   content: [
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
     "./src/screens/**/*.{js,ts,jsx,tsx}",
-    "./src/components/**/*.{js,ts,jsx,tsx}"
+    "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {},
@@ -21,6 +21,15 @@ module.exports = {
             primary: "#a3add2",
             secondary: "#403771",
             accent: "#8671b9",
+          },
+        },
+        dark: {
+          colors: {
+            text: "#0c0e18",
+            background: "#e7e9f3",
+            primary: "#2d385c",
+            secondary: "#968dc8",
+            accent: "#5d4790",
           },
         },
       },

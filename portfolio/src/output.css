@@ -2199,11 +2199,6 @@ video {
   background-color: hsl(var(--nextui-primary) / var(--nextui-primary-opacity, var(--tw-bg-opacity)));
 }
 
-.bg-primary-50 {
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--nextui-primary-50) / var(--nextui-primary-50-opacity, var(--tw-bg-opacity)));
-}
-
 .bg-primary\/20 {
   background-color: hsl(var(--nextui-primary) / 0.2);
 }
@@ -2211,11 +2206,6 @@ video {
 .bg-secondary {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--nextui-secondary) / var(--nextui-secondary-opacity, var(--tw-bg-opacity)));
-}
-
-.bg-secondary-50 {
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--nextui-secondary-50) / var(--nextui-secondary-50-opacity, var(--tw-bg-opacity)));
 }
 
 .bg-secondary\/20 {
@@ -2647,11 +2637,6 @@ video {
   color: hsl(var(--nextui-primary) / var(--nextui-primary-opacity, var(--tw-text-opacity)));
 }
 
-.text-primary-foreground {
-  --tw-text-opacity: 1;
-  color: hsl(var(--nextui-primary-foreground) / var(--nextui-primary-foreground-opacity, var(--tw-text-opacity)));
-}
-
 .text-primary\/80 {
   color: hsl(var(--nextui-primary) / 0.8);
 }
@@ -2659,11 +2644,6 @@ video {
 .text-secondary {
   --tw-text-opacity: 1;
   color: hsl(var(--nextui-secondary) / var(--nextui-secondary-opacity, var(--tw-text-opacity)));
-}
-
-.text-secondary-foreground {
-  --tw-text-opacity: 1;
-  color: hsl(var(--nextui-secondary-foreground) / var(--nextui-secondary-foreground-opacity, var(--tw-text-opacity)));
 }
 
 .text-secondary\/80 {
@@ -3256,7 +3236,7 @@ video {
 
 .dark,[data-theme="dark"] {
   color-scheme: dark;
-  --nextui-background: 0 0% 0%;
+  --nextui-background: 230 33% 93%;
   --nextui-foreground-50: 240 6% 10%;
   --nextui-foreground-100: 240 4% 16%;
   --nextui-foreground-200: 240 5% 26%;
@@ -3292,30 +3272,8 @@ video {
   --nextui-default-900: 0 0% 98%;
   --nextui-default-foreground: 0 0% 100%;
   --nextui-default: 240 5% 26%;
-  --nextui-primary-50: 212 100% 10%;
-  --nextui-primary-100: 212 100% 19%;
-  --nextui-primary-200: 212 100% 29%;
-  --nextui-primary-300: 212 100% 38%;
-  --nextui-primary-400: 212 100% 47%;
-  --nextui-primary-500: 212 92% 58%;
-  --nextui-primary-600: 212 92% 69%;
-  --nextui-primary-700: 212 92% 79%;
-  --nextui-primary-800: 212 92% 90%;
-  --nextui-primary-900: 213 92% 95%;
-  --nextui-primary-foreground: 0 0% 100%;
-  --nextui-primary: 212 100% 47%;
-  --nextui-secondary-50: 270 67% 9%;
-  --nextui-secondary-100: 270 67% 19%;
-  --nextui-secondary-200: 270 67% 28%;
-  --nextui-secondary-300: 270 67% 38%;
-  --nextui-secondary-400: 270 67% 47%;
-  --nextui-secondary-500: 270 59% 58%;
-  --nextui-secondary-600: 270 59% 68%;
-  --nextui-secondary-700: 270 59% 79%;
-  --nextui-secondary-800: 270 59% 89%;
-  --nextui-secondary-900: 270 62% 95%;
-  --nextui-secondary-foreground: 0 0% 100%;
-  --nextui-secondary: 270 59% 58%;
+  --nextui-primary: 226 34% 27%;
+  --nextui-secondary: 249 35% 67%;
   --nextui-success-50: 146 78% 9%;
   --nextui-success-100: 146 80% 17%;
   --nextui-success-200: 146 79% 26%;
@@ -3352,6 +3310,8 @@ video {
   --nextui-danger-900: 339 92% 95%;
   --nextui-danger-foreground: 0 0% 100%;
   --nextui-danger: 339 90% 51%;
+  --nextui-text: 230 33% 7%;
+  --nextui-accent: 258 34% 42%;
   --nextui-spacing-unit: 4px;
   --nextui-spacing-unit-0: 0px;
   --nextui-spacing-unit-1: 0.25rem;
@@ -4271,18 +4231,6 @@ code {
   color: hsl(var(--nextui-default-foreground) / var(--nextui-default-foreground-opacity, var(--tw-text-opacity)));
 }
 
-.after\:text-primary-foreground::after {
-  content: var(--tw-content);
-  --tw-text-opacity: 1;
-  color: hsl(var(--nextui-primary-foreground) / var(--nextui-primary-foreground-opacity, var(--tw-text-opacity)));
-}
-
-.after\:text-secondary-foreground::after {
-  content: var(--tw-content);
-  --tw-text-opacity: 1;
-  color: hsl(var(--nextui-secondary-foreground) / var(--nextui-secondary-foreground-opacity, var(--tw-text-opacity)));
-}
-
 .after\:text-success-foreground::after {
   content: var(--tw-content);
   --tw-text-opacity: 1;
@@ -4566,11 +4514,6 @@ code {
   color: hsl(var(--nextui-danger-foreground) / var(--nextui-danger-foreground-opacity, var(--tw-text-opacity))) !important;
 }
 
-.hover\:\!text-primary-foreground:hover {
-  --tw-text-opacity: 1 !important;
-  color: hsl(var(--nextui-primary-foreground) / var(--nextui-primary-foreground-opacity, var(--tw-text-opacity))) !important;
-}
-
 .hover\:\!text-success-foreground:hover {
   --tw-text-opacity: 1 !important;
   color: hsl(var(--nextui-success-foreground) / var(--nextui-success-foreground-opacity, var(--tw-text-opacity))) !important;
@@ -4579,11 +4522,6 @@ code {
 .hover\:\!text-warning-foreground:hover {
   --tw-text-opacity: 1 !important;
   color: hsl(var(--nextui-warning-foreground) / var(--nextui-warning-foreground-opacity, var(--tw-text-opacity))) !important;
-}
-
-.hover\:text-secondary-foreground:hover {
-  --tw-text-opacity: 1;
-  color: hsl(var(--nextui-secondary-foreground) / var(--nextui-secondary-foreground-opacity, var(--tw-text-opacity)));
 }
 
 .hover\:underline:hover {
@@ -4606,6 +4544,27 @@ code {
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hover\:blur-md:hover {
+  --tw-blur: blur(12px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.hover\:blur-sm:hover {
+  --tw-blur: blur(4px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.hover\:blur:hover {
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.hover\:backdrop-blur-sm:hover {
+  --tw-backdrop-blur: blur(4px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .hover\:after\:bg-danger\/20:hover::after {
@@ -5103,11 +5062,6 @@ code {
   background-color: hsl(var(--nextui-primary) / var(--nextui-primary-opacity, var(--tw-bg-opacity)));
 }
 
-.data-\[hover\=true\]\:bg-primary-100[data-hover=true] {
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--nextui-primary-100) / var(--nextui-primary-100-opacity, var(--tw-bg-opacity)));
-}
-
 .data-\[hover\=true\]\:bg-primary\/20[data-hover=true] {
   background-color: hsl(var(--nextui-primary) / 0.2);
 }
@@ -5115,11 +5069,6 @@ code {
 .data-\[hover\=true\]\:bg-secondary[data-hover=true] {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--nextui-secondary) / var(--nextui-secondary-opacity, var(--tw-bg-opacity)));
-}
-
-.data-\[hover\=true\]\:bg-secondary-100[data-hover=true] {
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--nextui-secondary-100) / var(--nextui-secondary-100-opacity, var(--tw-bg-opacity)));
 }
 
 .data-\[hover\=true\]\:bg-secondary\/20[data-hover=true] {
@@ -5257,16 +5206,6 @@ code {
   color: hsl(var(--nextui-default-foreground) / var(--nextui-default-foreground-opacity, var(--tw-text-opacity)));
 }
 
-.data-\[active\=true\]\:text-primary-foreground[data-active=true] {
-  --tw-text-opacity: 1;
-  color: hsl(var(--nextui-primary-foreground) / var(--nextui-primary-foreground-opacity, var(--tw-text-opacity)));
-}
-
-.data-\[active\=true\]\:text-secondary-foreground[data-active=true] {
-  --tw-text-opacity: 1;
-  color: hsl(var(--nextui-secondary-foreground) / var(--nextui-secondary-foreground-opacity, var(--tw-text-opacity)));
-}
-
 .data-\[active\=true\]\:text-success-foreground[data-active=true] {
   --tw-text-opacity: 1;
   color: hsl(var(--nextui-success-foreground) / var(--nextui-success-foreground-opacity, var(--tw-text-opacity)));
@@ -5312,19 +5251,9 @@ code {
   color: hsl(var(--nextui-primary) / var(--nextui-primary-opacity, var(--tw-text-opacity)));
 }
 
-.data-\[hover\=true\]\:text-primary-foreground[data-hover=true] {
-  --tw-text-opacity: 1;
-  color: hsl(var(--nextui-primary-foreground) / var(--nextui-primary-foreground-opacity, var(--tw-text-opacity)));
-}
-
 .data-\[hover\=true\]\:text-secondary[data-hover=true] {
   --tw-text-opacity: 1;
   color: hsl(var(--nextui-secondary) / var(--nextui-secondary-opacity, var(--tw-text-opacity)));
-}
-
-.data-\[hover\=true\]\:text-secondary-foreground[data-hover=true] {
-  --tw-text-opacity: 1;
-  color: hsl(var(--nextui-secondary-foreground) / var(--nextui-secondary-foreground-opacity, var(--tw-text-opacity)));
 }
 
 .data-\[hover\=true\]\:text-success[data-hover=true] {
@@ -5367,19 +5296,9 @@ code {
   color: hsl(var(--nextui-primary) / var(--nextui-primary-opacity, var(--tw-text-opacity)));
 }
 
-.data-\[selected\=true\]\:text-primary-foreground[data-selected=true] {
-  --tw-text-opacity: 1;
-  color: hsl(var(--nextui-primary-foreground) / var(--nextui-primary-foreground-opacity, var(--tw-text-opacity)));
-}
-
 .data-\[selected\=true\]\:text-secondary[data-selected=true] {
   --tw-text-opacity: 1;
   color: hsl(var(--nextui-secondary) / var(--nextui-secondary-opacity, var(--tw-text-opacity)));
-}
-
-.data-\[selected\=true\]\:text-secondary-foreground[data-selected=true] {
-  --tw-text-opacity: 1;
-  color: hsl(var(--nextui-secondary-foreground) / var(--nextui-secondary-foreground-opacity, var(--tw-text-opacity)));
 }
 
 .data-\[selected\=true\]\:text-success-600[data-selected=true] {
@@ -5528,14 +5447,6 @@ code {
 
 .data-\[focus-visible\]\:outline-default-foreground[data-focus-visible] {
   outline-color: hsl(var(--nextui-default-foreground) / var(--nextui-default-foreground-opacity, 1));
-}
-
-.data-\[focus-visible\]\:outline-primary-foreground[data-focus-visible] {
-  outline-color: hsl(var(--nextui-primary-foreground) / var(--nextui-primary-foreground-opacity, 1));
-}
-
-.data-\[focus-visible\]\:outline-secondary-foreground[data-focus-visible] {
-  outline-color: hsl(var(--nextui-secondary-foreground) / var(--nextui-secondary-foreground-opacity, 1));
 }
 
 .data-\[focus-visible\]\:outline-success-foreground[data-focus-visible] {
@@ -5975,19 +5886,9 @@ code {
   color: hsl(var(--nextui-primary) / var(--nextui-primary-opacity, var(--tw-text-opacity)));
 }
 
-.data-\[selectable\=true\]\:focus\:text-primary-foreground:focus[data-selectable=true] {
-  --tw-text-opacity: 1;
-  color: hsl(var(--nextui-primary-foreground) / var(--nextui-primary-foreground-opacity, var(--tw-text-opacity)));
-}
-
 .data-\[selectable\=true\]\:focus\:text-secondary:focus[data-selectable=true] {
   --tw-text-opacity: 1;
   color: hsl(var(--nextui-secondary) / var(--nextui-secondary-opacity, var(--tw-text-opacity)));
-}
-
-.data-\[selectable\=true\]\:focus\:text-secondary-foreground:focus[data-selectable=true] {
-  --tw-text-opacity: 1;
-  color: hsl(var(--nextui-secondary-foreground) / var(--nextui-secondary-foreground-opacity, var(--tw-text-opacity)));
 }
 
 .data-\[selectable\=true\]\:focus\:text-success:focus[data-selectable=true] {
@@ -6347,16 +6248,6 @@ code {
   background-color: hsl(var(--nextui-default-100) / var(--nextui-default-100-opacity, var(--tw-bg-opacity)));
 }
 
-.group[data-focus=true] .group-data-\[focus\=true\]\:bg-primary-50 {
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--nextui-primary-50) / var(--nextui-primary-50-opacity, var(--tw-bg-opacity)));
-}
-
-.group[data-focus=true] .group-data-\[focus\=true\]\:bg-secondary-50 {
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--nextui-secondary-50) / var(--nextui-secondary-50-opacity, var(--tw-bg-opacity)));
-}
-
 .group[data-focus=true] .group-data-\[focus\=true\]\:bg-success-50 {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--nextui-success-50) / var(--nextui-success-50-opacity, var(--tw-bg-opacity)));
@@ -6487,19 +6378,9 @@ code {
   color: hsl(var(--nextui-primary) / var(--nextui-primary-opacity, var(--tw-text-opacity)));
 }
 
-.group[data-selected=true] .group-data-\[selected\=true\]\:text-primary-foreground {
-  --tw-text-opacity: 1;
-  color: hsl(var(--nextui-primary-foreground) / var(--nextui-primary-foreground-opacity, var(--tw-text-opacity)));
-}
-
 .group[data-selected=true] .group-data-\[selected\=true\]\:text-secondary {
   --tw-text-opacity: 1;
   color: hsl(var(--nextui-secondary) / var(--nextui-secondary-opacity, var(--tw-text-opacity)));
-}
-
-.group[data-selected=true] .group-data-\[selected\=true\]\:text-secondary-foreground {
-  --tw-text-opacity: 1;
-  color: hsl(var(--nextui-secondary-foreground) / var(--nextui-secondary-foreground-opacity, var(--tw-text-opacity)));
 }
 
 .group[data-selected=true] .group-data-\[selected\=true\]\:text-success {
