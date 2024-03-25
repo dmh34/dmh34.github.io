@@ -149,3 +149,15 @@ const PortfolioProjects = [
 ];
 
 export default PortfolioProjects;
+
+const Categories = [
+  "Web",
+  "Game",
+  "Desktop",
+  "Mobile",
+  "Music",
+  "3D Art",
+  "All",
+];
+
+export { Categories };

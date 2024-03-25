@@ -7,29 +7,77 @@ import {
   Image,
 } from "@nextui-org/react";
 import PortfolioProjects from "../util/projects.util";
+import { Categories } from "../util/projects.util";
 import { Link, useNavigate } from "react-router-dom";
 import Nav from "../components/Nav.component";
+import { ReactComponent as CloseIcon } from "../assests/CloseIcon.svg";
+import { useEffect, useState } from "react";
+import Icons from "../assests";
 
 function Projects() {
   //TODO: Add project filtering by category
+  const [filteredProjects, setFilteredProjects] = useState([
+    ...PortfolioProjects,
+  ]);
+  const [selectedCategories, setSelectedCategories] = useState<string>();
+  const handleCategoryClick = (category: string) => {
+    return function (event: any) {
+      setSelectedCategories(category);
+    };
+  };
+
+  useEffect(() => {
+    let filtered = PortfolioProjects.filter((project) => {
+      if (selectedCategories && selectedCategories !== "All") {
+        console.info("Category selected");
+        return project.category.includes(selectedCategories);
+      }
+      console.info("No category selected");
+      return PortfolioProjects;
+    });
+    setFilteredProjects(filtered);
+  }, [filteredProjects, selectedCategories]);
 
   return (
-    <div className="">
-      <Nav />
+    <div className="grid grid-cols-10 gap-3">
+      <div className="col-span-10 ">
+        <Nav />
+      </div>
 
-      <div className=" flex flex-wrap justify-center gap-3 p-4 sm:flex-col md:flex-row">
-        {PortfolioProjects.map((project) => (
+      <div className="col-span-10 flex justify-center gap-3">
+        <h1 className="text-3xl">Portfolio</h1>
+        {/* </div>
+
+        {/* <div className="col-span-10 flex justify-center gap-3">
+          {Categories.map((category) => (
+            <Chip key={category} color="primary" className="rounded-full">
+              <div className="flex flex-row ">
+                {category}
+                <CloseIcon />
+              </div>
+            </Chip>
+          ))} */}
+      </div>
+      <div className="col-span-10 flex justify-center gap-3">
+        {Categories.map((category) => (
+          <Button onClick={handleCategoryClick(category)}>{category}</Button>
+        ))}
+      </div>
+
+      <div className=" col-span-8 col-start-2 flex flex-wrap justify-center gap-3 p-4 sm:flex-col md:flex-row">
+        {filteredProjects.map((project) => (
           <Link to={`/project/${project.id}`} key={project.id}>
             <Card
               key={project.id}
               isFooterBlurred
               isPressable
-              className="bg-primary rounded-full shadow-primary shadow-xl hover:shadow-none"
+              className="bg-primary  shadow-primary rounded-full shadow-xl hover:shadow-none"
             >
               {/* <CardHeader>
                 <h3>{project.ProjectName}</h3>
               </CardHeader> */}
-              <Image className="rounded-full"
+              <Image
+                className="rounded-full"
                 src={project.ProjectImage[0]}
                 alt={project.ProjectImage[1]}
                 width={300}

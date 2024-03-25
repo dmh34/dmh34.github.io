@@ -37,7 +37,6 @@ function Project() {
           <h1 className="text-3xl">{project?.ProjectName}</h1>
         </div>
         <div className="col-span-10 flex justify-center gap-2">
-          {/*TODO: Add project category filtering, add conditional rendering for chips*/}
           <Chip color="primary" className="rounded-full">
             {project?.Language ? project?.Language : null}
           </Chip>
@@ -49,12 +48,15 @@ function Project() {
           <TechStack TechStack={project?.TechStack} />
         </div>
         <div className="col-span-10 flex justify-center gap-2">
-          <Button isIconOnly className=" bg-primary rounded-full ">
+          <Button
+            isIconOnly
+            className=" bg-primary rounded-full shadow-lg shadow-primary hover:shadow-none"
+          >
             <GithubIcon />
           </Button>
           <Button
             isIconOnly
-            className="bg-primary  shadow-primary rounded-full shadow-sm"
+            className="bg-primary  shadow-primary rounded-full shadow-lg hover:shadow-none"
           >
             <AppIcon />
           </Button>
@@ -92,7 +94,7 @@ function Project() {
         </div>
         <div className=" col-span-10 flex justify-center gap-3">
           <Button
-            className="bg-primary rounded-full"
+            className="bg-primary rounded-full shadow-primary shadow-lg hover:shadow-none"
             onClick={() => navigate("/projects")}
           >
             Back
