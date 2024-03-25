@@ -9,7 +9,7 @@ function TechStack(teckStack: TechStackProps) {
   return (
     <>
       {teckStack.TechStack?.map((tech) => (
-        <Chip key={tech} className="bg-primary">
+        <Chip key={tech} className="bg-primary text-black">
           {tech}
         </Chip>
       ))}

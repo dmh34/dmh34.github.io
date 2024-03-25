@@ -157,7 +157,7 @@ const Categories = [
   "Mobile",
   "Music",
   "3D Art",
-  "Open Source",
+  "All",
 ];
 
 export { Categories };
