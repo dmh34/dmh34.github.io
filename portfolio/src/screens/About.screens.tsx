@@ -1,14 +1,5 @@
 import "../../src/output.css";
-import { ReactComponent as CVIcon } from "../assests/CVIcon.svg";
-import { ReactComponent as EmailIcon } from "../assests/EmailIcon.svg";
-import { ReactComponent as FaceBookIcon } from "../assests/FaceBookIcon.svg";
-import { ReactComponent as GithubIcon } from "../assests/GithubIcon.svg";
-import { ReactComponent as InstagramIcon } from "../assests/InstagramIcon.svg";
-import { ReactComponent as LinkedinIcon } from "../assests/LinkedinIcon.svg";
-import { ReactComponent as TwitchIcon } from "../assests/TwitchIcon.svg";
-import { ReactComponent as TwitterIcon } from "../assests/TwitterIcon.svg";
-import { ReactComponent as YoutubeIcon } from "../assests/YoutubeIcon.svg";
-import { ReactComponent as RumbleIcon } from "../assests/RumbleIcon.svg";
+import Icons from "../assests";
 import Nav from "../components/Nav.component";
 import AboutData from "../util/about.util";
 
@@ -27,67 +18,66 @@ function About() {
           className=" shadow-primary h-48 w-48 shadow-md"
         />
       </div>
-
       <div className="col-span-5 flex justify-center gap-4">
         <Button
           isIconOnly
           className="bg-primary shadow-primary rounded-full  shadow-xl hover:shadow-none"
         >
-          <GithubIcon />
+          {Icons.GithubIcon}
         </Button>
         <Button
           isIconOnly
           className="bg-primary shadow-primary rounded-full shadow-xl hover:shadow-none"
         >
-          <LinkedinIcon />
+          {Icons.LinkedinIcon}
         </Button>
         <Button
           isIconOnly
           className="bg-primary shadow-primary rounded-full shadow-xl hover:shadow-none"
         >
-          <EmailIcon />
+          {Icons.EmailIcon}
         </Button>
         <Button
           isIconOnly
           className="bg-primary shadow-primary rounded-full shadow-xl hover:shadow-none"
         >
-          <CVIcon />
+          {Icons.CVIcon}
         </Button>
         <Button
           isIconOnly
           className="bg-primary shadow-primary rounded-full shadow-xl hover:shadow-none"
         >
-          <YoutubeIcon />
+          {Icons.YoutubeIcon}
         </Button>
         <Button
           isIconOnly
           className="bg-primary shadow-primary rounded-full shadow-xl hover:shadow-none"
         >
-          <RumbleIcon />
+          {Icons.RumbleIcon}
         </Button>
         <Button
           isIconOnly
           className="bg-primary shadow-primary rounded-full shadow-xl hover:shadow-none"
         >
-          <TwitchIcon />
+          {Icons.TwitchIcon}
         </Button>
         <Button
           isIconOnly
           className="bg-primary shadow-primary rounded-full shadow-xl hover:shadow-none"
         >
-          <TwitterIcon />
+          {Icons.TwitterIcon}
         </Button>
         <Button
           isIconOnly
           className="bg-primary shadow-primary rounded-full shadow-xl hover:shadow-none"
         >
-          <InstagramIcon />
+          {Icons.InstagramIcon}
         </Button>
         <Button
           isIconOnly
           className="bg-primary shadow-primary rounded-full shadow-xl hover:shadow-none"
         >
-          <FaceBookIcon />
+          {Icons.FaceBookIcon}
         </Button>
       </div>
       <div className="col-span-5 flex justify-center">

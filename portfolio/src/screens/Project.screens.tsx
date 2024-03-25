@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import PortfolioProjects from "../util/projects.util";
 import Nav from "../components/Nav.component";
-import { Button, Chip, Divider, Image } from "@nextui-org/react";
+import { Button, Chip, Divider, Image, Link } from "@nextui-org/react";
 import { ReactComponent as GithubIcon } from "../assests/GithubIcon.svg";
-
 import { ReactComponent as AppIcon } from "../assests/AppIcon.svg";
 import TechStack from "../components/TechStack.component";
+import Icons from "../assests";
 
 interface ProjectState {
   id: string;
@@ -17,7 +17,7 @@ interface ProjectState {
   Links: string[];
   ProjectImage: string[];
 }
-
+//TODO: Display error if project is not found
 function Project() {
   const [project, setProject] = useState<ProjectState>();
   const { id } = useParams();
@@ -48,18 +48,22 @@ function Project() {
           <TechStack TechStack={project?.TechStack} />
         </div>
         <div className="col-span-10 flex justify-center gap-2">
-          <Button
-            isIconOnly
-            className=" bg-primary rounded-full shadow-lg shadow-primary hover:shadow-none"
-          >
-            <GithubIcon />
-          </Button>
-          <Button
-            isIconOnly
-            className="bg-primary  shadow-primary rounded-full shadow-lg hover:shadow-none"
-          >
-            <AppIcon />
-          </Button>
+          <Link href={project?.Links[0]} target="_blank">
+            <Button
+              isIconOnly
+              className=" bg-primary shadow-primary rounded-full shadow-lg hover:shadow-none"
+            >
+              {Icons.GithubIcon}
+            </Button>
+          </Link>
+          <Link href={project?.Links[1]} target="_blank">
+            <Button
+              isIconOnly
+              className="bg-primary  shadow-primary rounded-full shadow-lg hover:shadow-none"
+            >
+              {Icons.AppIcon}
+            </Button>
+          </Link>
         </div>
         <div className="col-span-10">
           <Divider className="bg-primary w-full" />
@@ -94,7 +98,7 @@ function Project() {
         </div>
         <div className=" col-span-10 flex justify-center gap-3">
           <Button
-            className="bg-primary rounded-full shadow-primary shadow-lg hover:shadow-none"
+            className="bg-primary shadow-primary rounded-full shadow-lg hover:shadow-none"
             onClick={() => navigate("/projects")}
           >
             Back

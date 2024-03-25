@@ -1,6 +1,5 @@
 import { ReactComponent as AppIcon } from "../assests/AppIcon.svg";
 import { ReactComponent as GithubIcon } from "../assests/GithubIcon.svg";
-
 import { ReactComponent as EmailIcon } from "../assests/EmailIcon.svg";
 import { ReactComponent as LinkedinIcon } from "../assests/LinkedinIcon.svg";
 import { ReactComponent as CVIcon } from "../assests/CVIcon.svg";
@@ -23,7 +22,7 @@ const Icons = {
   CVIcon: <CVIcon />,
   YoutubeIcon: <YoutubeIcon />,
   RumbleIcon: <RumbleIcon />,
-  TwichIcon: <TwitchIcon />,
+  TwitchIcon: <TwitchIcon />,
   TwitterIcon: <TwitterIcon />,
   InstagramIcon: <InstagramIcon />,
   FaceBookIcon: <FaceBookIcon />,

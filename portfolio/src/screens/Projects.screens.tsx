@@ -1,18 +1,9 @@
-import {
-  Button,
-  Card,
-  CardFooter,
-  CardHeader,
-  Chip,
-  Image,
-} from "@nextui-org/react";
+import { Button, Card, CardFooter, Image } from "@nextui-org/react";
 import PortfolioProjects from "../util/projects.util";
 import { Categories } from "../util/projects.util";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Nav from "../components/Nav.component";
-import { ReactComponent as CloseIcon } from "../assests/CloseIcon.svg";
 import { useEffect, useState } from "react";
-import Icons from "../assests";
 
 function Projects() {
   //TODO: Add project filtering by category
@@ -36,7 +27,7 @@ function Projects() {
       return PortfolioProjects;
     });
     setFilteredProjects(filtered);
-  }, [filteredProjects, selectedCategories]);
+  }, [selectedCategories]);
 
   return (
     <div className="grid grid-cols-10 gap-3">
@@ -60,7 +51,12 @@ function Projects() {
       </div>
       <div className="col-span-10 flex justify-center gap-3">
         {Categories.map((category) => (
-          <Button onClick={handleCategoryClick(category)}>{category}</Button>
+          <Button
+            className="bg-primary"
+            onClick={handleCategoryClick(category)}
+          >
+            {category}
+          </Button>
         ))}
       </div>
 
@@ -71,7 +67,7 @@ function Projects() {
               key={project.id}
               isFooterBlurred
               isPressable
-              className="bg-primary  shadow-primary rounded-full shadow-xl hover:shadow-none"
+              className="bg-primary  shadow-primary rounded-full shadow-md hover:shadow-none"
             >
               {/* <CardHeader>
                 <h3>{project.ProjectName}</h3>
