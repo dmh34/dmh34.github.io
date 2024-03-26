@@ -10,14 +10,17 @@ const appRouter = createBrowserRouter([
     path: "/",
     element: <About />,
     index: true,
+    errorElement: <div>404</div>,
   },
   {
     path: "/Projects",
     element: <Projects />,
+    errorElement: <div>404</div>,
   },
   {
     path: "/project/:id",
     element: <Project />,
+    errorElement: <div>404</div>,
   },
   {},
 ]);

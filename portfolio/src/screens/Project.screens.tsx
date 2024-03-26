@@ -25,8 +25,11 @@ function Project() {
   useEffect(() => {
     const current = PortfolioProjects.find((project) => project.id === id);
     console.info(`${current?.id} is the current project`);
+    if (!current) {
+      navigate("/projects");
+    }
     setProject(current);
-  }, [id]);
+  });
   return (
     <div>
       <div className=" grid grid-cols-10 gap-4">
