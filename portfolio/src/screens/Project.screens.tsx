@@ -26,7 +26,7 @@ function Project() {
     const current = PortfolioProjects.find((project) => project.id === id);
     console.info(`${current?.id} is the current project`);
     if (!current) {
-      navigate("/projects");
+      navigate("/Error");
     }
     setProject(current);
   });
