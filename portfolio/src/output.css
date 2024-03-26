@@ -1062,6 +1062,10 @@ video {
   height: var(--nextui-spacing-unit-8);
 }
 
+.h-96 {
+  height: 24rem;
+}
+
 .max-h-64 {
   max-height: 16rem;
 }
@@ -1224,6 +1228,10 @@ video {
 
 .w-unit-8 {
   width: var(--nextui-spacing-unit-8);
+}
+
+.w-96 {
+  width: 24rem;
 }
 
 .min-w-10 {
@@ -1673,6 +1681,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-items-center {
+  justify-items: center;
 }
 
 .\!gap-0 {

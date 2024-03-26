@@ -14,14 +14,17 @@ const ErrorComponent = ({ errorMessage }: ErrorComponentProps) => {
   const Navigate = useNavigate();
   return (
     <div className="flex h-screen justify-center items-center">
-      <Card isBlurred className=" border-none bg-background">
-        <CardHeader>
+      <Card
+        isBlurred
+        className=" border-none bg-secondary w-96 h-96 items-center flex flex-col gap-4"
+      >
+        <CardHeader className="py-4 text-center">
           Looks like the project you were looking for went missing.
         </CardHeader>
-        <CardBody>
-          <p>Something went wrong.</p>
+        <CardBody className="items-center gap-4">
+          <p>Sorry about that</p>
           <p>{errorMessage}</p>
-          <Button onClick={() => Navigate("/projects")}>Go Back</Button>
+          <Button onClick={() => Navigate("/projects")}>Go to Projects</Button>
         </CardBody>
       </Card>
     </div>

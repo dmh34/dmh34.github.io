@@ -43,11 +43,7 @@ function Project() {
           <Chip color="primary" className="rounded-full">
             {project?.Language ? project?.Language : null}
           </Chip>
-          {/* {project?.TechStack.map((tech) => (
-            <Chip color="primary" className="rounded-full">
-              {tech}
-            </Chip>
-          ))} */}
+
           <TechStack TechStack={project?.TechStack} />
         </div>
         <div className="col-span-10 flex justify-center gap-2">
@@ -79,20 +75,6 @@ function Project() {
         <div className="col-span-10 flex justify-center">
           <p>{project?.ProjectDescription}</p>
         </div>
-        {/* <div className="col-span-2 col-start-6">
-          <p className="block">Tech Stack:</p>
-          <ul className="text-right">
-            {project?.TechStack.map((tech) => (
-              <li key={project?.id}>{tech}</li>
-            ))}
-          </ul>
-        </div>
-        <div className="col-span-2 col-start-8">
-          <p className="block">Languages:</p>
-          <ul className="text-right">
-            <li key={project?.id}>{project?.Language}</li>
-          </ul>
-        </div> */}
 
         <div className=" col-span-10 flex justify-center gap-4">
           {project?.ProjectImage.map((image) => (
