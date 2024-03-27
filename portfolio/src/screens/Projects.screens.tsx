@@ -86,10 +86,6 @@ function Projects() {
           </Link>
         ))}
       </div>
-
-      <div>
-        <InfoCard />
-      </div>
     </div>
   );
 }
