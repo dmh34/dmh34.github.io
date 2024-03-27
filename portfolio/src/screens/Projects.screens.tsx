@@ -4,6 +4,7 @@ import { Categories } from "../util/projects.util";
 import { Link } from "react-router-dom";
 import Nav from "../components/Nav.component";
 import { useEffect, useState } from "react";
+import InfoCard from "../components/InfoCard.component";
 
 function Projects() {
   //TODO: Add project filtering by category
@@ -59,7 +60,6 @@ function Projects() {
           </Button>
         ))}
       </div>
-
       <div className=" col-span-8 col-start-2 flex flex-wrap justify-center gap-3 p-4 sm:flex-col md:flex-row">
         {filteredProjects.map((project) => (
           <Link to={`/project/${project.id}`} key={project.id}>
@@ -85,6 +85,10 @@ function Projects() {
             </Card>
           </Link>
         ))}
+      </div>
+
+      <div>
+        <InfoCard />
       </div>
     </div>
   );
