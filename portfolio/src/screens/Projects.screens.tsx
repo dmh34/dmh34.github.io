@@ -61,7 +61,7 @@ function Projects() {
         ))}
       </div>
       <div className=" col-span-8 col-start-2 flex flex-wrap justify-center gap-3 p-4 sm:flex-col md:flex-row">
-        {filteredProjects.map((project) => (
+        {/* {filteredProjects.map((project) => (
           <Link to={`/project/${project.id}`} key={project.id}>
             <Card
               key={project.id}
@@ -72,7 +72,7 @@ function Projects() {
               {/* <CardHeader>
                 <h3>{project.ProjectName}</h3>
               </CardHeader> */}
-              <Image
+        {/* <Image
                 className="rounded-full"
                 src={project.ProjectImage[0]}
                 alt={project.ProjectImage[1]}
@@ -84,6 +84,17 @@ function Projects() {
               </CardFooter>
             </Card>
           </Link>
+        ))} */}
+        {filteredProjects.map((project) => (
+          <InfoCard
+            Id={project.id}
+            key={project.id}
+            title={project.ProjectName}
+            Language={project.Language}
+            description={project.Shortdescription}
+            category={project.category}
+            logo={project.ProjectImage[0]}
+          />
         ))}
       </div>
     </div>

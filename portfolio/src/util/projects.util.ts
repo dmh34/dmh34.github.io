@@ -8,6 +8,7 @@ const PortfolioProjects = [
     Language: "TypeScript",
     ProjectDescription:
       "Umami is a app that helps home chefs to find recipes and create a shopping list.",
+    Shortdescription: "A recipe app",
     Links: ["www.google.com", "www.google.com"],
     ProjectImage: [
       "https://placehold.co/200",
@@ -31,6 +32,7 @@ const PortfolioProjects = [
     Language: "TypeScript",
     ProjectDescription:
       "Raid Encounter Trainer is a app that helps gamers to learn and practice raid encounters in Final Fantasy 14.",
+    Shortdescription: "A raid encounter trainer",
     Links: ["www.google.com", "www.google.com"],
     ProjectImage: [
       "https://placehold.co/200",
@@ -54,6 +56,7 @@ const PortfolioProjects = [
     Language: "TypeScript",
     ProjectDescription:
       "A basic role playing game with turn based startegy elements.",
+    Shortdescription: "A role playing game",
     Links: ["www.google.com", "www.google.com"],
     ProjectImage: [
       "https://placehold.co/200",
@@ -71,6 +74,7 @@ const PortfolioProjects = [
     Language: "C#",
     ProjectDescription:
       "A mobile app that helps people to find and report crime in their area.",
+    Shortdescription: "A crime reporting app",
     Links: ["www.google.com", "www.google.com"],
     ProjectImage: [
       "https://placehold.co/200",
@@ -86,6 +90,7 @@ const PortfolioProjects = [
     TechStack: ["React", "Node", "Express", "MongoDB", "Next UI"],
     Language: "TypeScript",
     ProjectDescription: "A open source project management tool.",
+    Shortdescription: "A project management tool",
     Links: ["www.google.com", "www.google.com"],
     ProjectImage: ["https://placehold.co/200", "https://placehold.co/200"],
   },
@@ -96,6 +101,7 @@ const PortfolioProjects = [
     TechStack: [],
     Language: "",
     ProjectDescription: "Djent Ablum",
+    Shortdescription: "A music player",
     Links: ["www.google.com", "www.google.com"],
     ProjectImage: [
       "https://placehold.co/200",
@@ -113,6 +119,7 @@ const PortfolioProjects = [
     TechStack: [],
     Language: "",
     ProjectDescription: "3D Model of a car",
+    Shortdescription: "A 3D model",
     Links: ["www.google.com", "www.google.com"],
     ProjectImage: ["https://placehold.co/200"],
   },
@@ -123,6 +130,7 @@ const PortfolioProjects = [
     TechStack: ["Unity", "C#"],
     Language: "C#",
     ProjectDescription: "A basic game",
+    Shortdescription: "A basic game",
     Links: ["www.google.com", "www.google.com"],
     ProjectImage: ["https://placehold.co/200", "https://placehold.co/200"],
   },
@@ -133,6 +141,7 @@ const PortfolioProjects = [
     TechStack: ["Unreal Engine", "C++"],
     Language: "C++",
     ProjectDescription: "A basic game",
+    Shortdescription: "A basic game",
     Links: ["www.google.com", "www.google.com"],
     ProjectImage: ["https://placehold.co/200"],
   },
@@ -143,6 +152,7 @@ const PortfolioProjects = [
     TechStack: [],
     Language: "",
     ProjectDescription: "D & D concept album",
+    Shortdescription: "A music album",
     Links: ["www.google.com", "www.google.com"],
     ProjectImage: ["https://placehold.co/200"],
   },
