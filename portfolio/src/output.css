@@ -1302,6 +1302,14 @@ video {
   width: var(--nextui-spacing-unit-9xl);
 }
 
+.w-unit-7xl {
+  width: var(--nextui-spacing-unit-7xl);
+}
+
+.w-unit-8xl {
+  width: var(--nextui-spacing-unit-8xl);
+}
+
 .min-w-10 {
   min-width: 2.5rem;
 }
