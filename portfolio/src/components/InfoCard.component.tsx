@@ -9,7 +9,7 @@ import {
   Chip,
 } from "@nextui-org/react";
 import { Link } from "react-router-dom";
-import Icons from "../assests";
+import Icons, { getIcon } from "../assests";
 
 interface InfoCardProps {
   Id: string;
@@ -21,12 +21,12 @@ interface InfoCardProps {
   icon?: typeof Icons;
 }
 
-function InfoCard(inforCardProps: InfoCardProps) {
+export default function InfoCard(inforCardProps: InfoCardProps) {
   return (
     <div>
       <Link to={`/project/${inforCardProps.Id}`}>
         <Card
-          className="h-32 w-unit-8xl bg-secondary"
+          className="h-32 w-unit-8xl bg-primary/30 border-none shadow-md shadow-secondary"
           isBlurred
           isHoverable
           isPressable
@@ -44,19 +44,23 @@ function InfoCard(inforCardProps: InfoCardProps) {
             </div>
             <div className="col-span-4  col-start-4 row-start-3 flex flex-row gap-1">
               {inforCardProps.Language ? (
-                <Chip color="primary" className="rounded-full">
-                  {inforCardProps.Language}
+                <Chip className="rounded-full opacity-100">
+                  {getIcon(inforCardProps.Language)}
                 </Chip>
               ) : null}
             </div>
             <div className="flex flex-row col-span-7 col-start-7 row-start-3 gap-1">
               {inforCardProps.category.map((category) => (
-                <Chip key={category} color="primary" className="rounded-full">
+                <Chip
+                  key={category}
+                  color="primary"
+                  className="rounded-full opacity-100"
+                >
                   {category}
                 </Chip>
               ))}
             </div>
-            <div className="col-span-7 row-start-5 col-start-3 py-3 ">
+            <div className="col-span-10 row-start-5  py-3 text-center">
               <p className="text-background">{inforCardProps.description}</p>
             </div>
           </CardBody>
@@ -65,4 +69,3 @@ function InfoCard(inforCardProps: InfoCardProps) {
     </div>
   );
 }
-export default InfoCard;

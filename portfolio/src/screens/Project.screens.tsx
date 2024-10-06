@@ -3,8 +3,6 @@ import { useNavigate, useParams } from "react-router-dom";
 import PortfolioProjects from "../util/projects.util";
 import Nav from "../components/Nav.component";
 import { Button, Chip, Divider, Image, Link } from "@nextui-org/react";
-import { ReactComponent as GithubIcon } from "../assests/GithubIcon.svg";
-import { ReactComponent as AppIcon } from "../assests/AppIcon.svg";
 import TechStack from "../components/TechStack.component";
 import Icons from "../assests";
 
@@ -17,8 +15,8 @@ interface ProjectState {
   Links: string[];
   ProjectImage: string[];
 }
-//TODO: Display error if project is not found
-function Project() {
+
+export default function Project() {
   const [project, setProject] = useState<ProjectState>();
   const { id } = useParams();
   const navigate = useNavigate();
@@ -29,7 +27,7 @@ function Project() {
       navigate("/Error");
     }
     setProject(current);
-  });
+  }, [id, navigate]);
   return (
     <div>
       <div className=" grid grid-cols-10 gap-4">
@@ -72,13 +70,18 @@ function Project() {
             <h2 className="text-xl">About Project</h2>
           </div>
         </div>
-        <div className="col-span-10 flex justify-center">
+        <div className="col-start-3 col-span-10 flex justify-center container">
           <p>{project?.ProjectDescription}</p>
         </div>
 
-        <div className=" col-span-10 flex justify-center gap-4">
+        <div className=" col-span-10 flex justify-center gap-4 ">
           {project?.ProjectImage.map((image) => (
-            <Image className="rounded-md" src={image} alt="project" />
+            <Image
+              key={project.id}
+              className="rounded-md"
+              src={image}
+              alt="project"
+            />
           ))}
         </div>
         <div className=" col-span-10 flex justify-center gap-3">
@@ -93,5 +96,3 @@ function Project() {
     </div>
   );
 }
-
-export default Project;

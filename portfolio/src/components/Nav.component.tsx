@@ -7,9 +7,9 @@ import {
 } from "@nextui-org/react";
 import { Link } from "react-router-dom";
 
-function Nav() {
+export default function Nav() {
   return (
-    <div>
+    <div className="container max-w-full">
       <Navbar
         isBlurred
         maxWidth="full"
@@ -38,4 +38,3 @@ function Nav() {
     </div>
   );
 }
-export default Nav;

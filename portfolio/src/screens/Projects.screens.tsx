@@ -1,4 +1,4 @@
-import { Button, Card, CardFooter, Image } from "@nextui-org/react";
+import { Button, Card, CardFooter, CardHeader, Image } from "@nextui-org/react";
 import PortfolioProjects from "../util/projects.util";
 import { Categories } from "../util/projects.util";
 import { Link } from "react-router-dom";
@@ -69,10 +69,10 @@ function Projects() {
               isPressable
               className="bg-primary  shadow-primary rounded-full shadow-md hover:shadow-none"
             >
-              {/* <CardHeader>
+              {<CardHeader>
                 <h3>{project.ProjectName}</h3>
-              </CardHeader> */}
-        {/* <Image
+              </CardHeader> }
+              <Image
                 className="rounded-full"
                 src={project.ProjectImage[0]}
                 alt={project.ProjectImage[1]}
@@ -85,6 +85,7 @@ function Projects() {
             </Card>
           </Link>
         ))} */}
+
         {filteredProjects.map((project) => (
           <InfoCard
             Id={project.id}

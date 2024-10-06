@@ -31,7 +31,7 @@ const PortfolioProjects = [
     ],
     Language: "TypeScript",
     ProjectDescription:
-      "Raid Encounter Trainer is a app that helps gamers to learn and practice raid encounters in Final Fantasy 14.",
+      "Raid Encounter Trainer is an innovative, interactive web application designed to help players of massively multiplayer online role-playing games (MMORPGs) master complex raid encounters. This comprehensive training tool simulates various raid scenarios, allowing players to practice and perfect their strategies without the pressure of live gameplay.Raid Encounter Trainer aims to revolutionize how MMORPG players prepare for challenging content, reducing the learning curve and frustration often associated with progression raiding. By providing a safe, stress-free environment to practice and perfect raid mechanics, this tool empowers players to enter live encounters with confidence and skill, ultimately enhancing their gaming experience and success rate in tackling the most demanding content their chosen MMORPG has to offer.",
     Shortdescription: "A raid encounter trainer",
     Links: ["www.google.com", "www.google.com"],
     ProjectImage: [
