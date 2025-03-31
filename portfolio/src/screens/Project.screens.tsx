@@ -17,11 +17,12 @@ interface ProjectState {
 }
 
 export default function Project() {
-  const [project, setProject] = useState<ProjectState>();
+  const [project, setProject] = useState<ProjectState | null>(null);
   const { id } = useParams();
   const navigate = useNavigate();
   useEffect(() => {
-    const current = PortfolioProjects.find((project) => project.id === id);
+    const current =
+      PortfolioProjects.find((project) => project.id === id) ?? null;
     console.info(`${current?.id} is the current project`);
     if (!current) {
       navigate("/Error");

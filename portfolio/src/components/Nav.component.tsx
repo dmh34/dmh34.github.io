@@ -11,12 +11,7 @@ import AboutData from "../util/about.util";
 export default function Nav() {
   return (
     <div className="container max-w-full">
-      <Navbar
-        isBlurred
-        maxWidth="full"
-        className="shadow-primary shadow-md"
-        isBordered
-      >
+      <Navbar isBlurred maxWidth="full">
         <NavbarBrand className="flex">
           <User
             name="Jane Doe"
@@ -25,8 +20,8 @@ export default function Nav() {
               src: "https://i.pravatar.cc/300",
               alt: "Jane Doe",
             }}
-          ></User>{" "}
-          *{/* <p>{AboutData.ShortName}</p> */}
+          ></User>
+          {/* <p>{AboutData.ShortName}</p> */}
         </NavbarBrand>
         <NavbarContent justify="center">
           <NavbarItem className="flex flex-grow justify-center gap-4">
