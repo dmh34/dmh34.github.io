@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import PortfolioProjects from "../util/projects.util";
 import Nav from "../components/Nav.component";
-import { Button, Chip, Divider, Image, Link } from "@nextui-org/react";
+import { Button, Chip, Divider, Image, Link } from "@heroui/react";
 import TechStack from "../components/TechStack.component";
 import Icons from "../assests";
 

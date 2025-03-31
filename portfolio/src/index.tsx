@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./output.css";
 
 import reportWebVitals from "./reportWebVitals";
-import { NextUIProvider } from "@nextui-org/react";
+import { HeroUIProvider } from "@heroui/react";
 import { RouterProvider } from "react-router-dom";
 import appRouter from "./util/approuter.util";
 
@@ -12,9 +12,9 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <NextUIProvider>
+    <HeroUIProvider>
       <RouterProvider router={appRouter} />
-    </NextUIProvider>
+    </HeroUIProvider>
   </React.StrictMode>
 );
 

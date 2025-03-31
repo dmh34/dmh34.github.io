@@ -1,7 +1,6 @@
-import { Button, Card, CardFooter, CardHeader, Image } from "@nextui-org/react";
+import { Button } from "@heroui/react";
 import PortfolioProjects from "../util/projects.util";
 import { Categories } from "../util/projects.util";
-import { Link } from "react-router-dom";
 import Nav from "../components/Nav.component";
 import { useEffect, useState } from "react";
 import InfoCard from "../components/InfoCard.component";
@@ -54,7 +53,7 @@ function Projects() {
         {Categories.map((category) => (
           <Button
             className="bg-primary"
-            onClick={handleCategoryClick(category)}
+            onPress={handleCategoryClick(category)}
           >
             {category}
           </Button>

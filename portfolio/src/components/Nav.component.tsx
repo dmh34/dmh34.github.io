@@ -4,8 +4,9 @@ import {
   NavbarContent,
   NavbarItem,
   User,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import { Link } from "react-router-dom";
+import AboutData from "../util/about.util";
 
 export default function Nav() {
   return (
@@ -24,7 +25,8 @@ export default function Nav() {
               src: "https://i.pravatar.cc/300",
               alt: "Jane Doe",
             }}
-          ></User>
+          ></User>{" "}
+          *{/* <p>{AboutData.ShortName}</p> */}
         </NavbarBrand>
         <NavbarContent justify="center">
           <NavbarItem className="flex flex-grow justify-center gap-4">

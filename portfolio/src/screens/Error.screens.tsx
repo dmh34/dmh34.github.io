@@ -1,33 +1,40 @@
-import { Button, CardBody, CardHeader, Card } from "@nextui-org/react";
+import { Button, CardBody, CardHeader, Card } from "@heroui/react";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
 type ErrorComponentProps = {
-  errorMessage?: string;
+  title?: string;
+  message?: string;
 };
 /**
+ *@param {string} {title} - Optional error title to display.
+ * @param {string} {message} - Optional error message to display.
  *
- * @param errorMessage optional error message
  * @returns full page error component
  */
-const ErrorComponent = ({ errorMessage }: ErrorComponentProps) => {
-  const Navigate = useNavigate();
+const ErrorComponent: React.FC<ErrorComponentProps> = ({
+  message = "An unexpected error occurred",
+  title = "Error",
+}) => {
+  const navigate = useNavigate();
   return (
-    <div className="flex h-screen justify-center items-center">
+    <main
+      role="alert"
+      aria-live="assertive"
+      aria-labelledby="error"
+      className="flex h-screen justify-center items-center"
+    >
       <Card
-        isBlurred
+        id="error"
         className=" border-none bg-secondary w-96 h-96 items-center flex flex-col gap-4"
       >
-        <CardHeader className="py-4 text-center">
-          Looks like the project you were looking for went missing.
-        </CardHeader>
+        <CardHeader className="py-4 text-center">{title}</CardHeader>
         <CardBody className="items-center gap-4">
-          <p>Sorry about that</p>
-          <p>{errorMessage}</p>
-          <Button onClick={() => Navigate("/projects")}>Go to Projects</Button>
+          <p>{message}</p>
+          <Button onPress={() => navigate("/projects")}>Go to Projects</Button>
         </CardBody>
       </Card>
-    </div>
+    </main>
   );
 };
 

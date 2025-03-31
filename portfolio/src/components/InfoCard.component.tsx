@@ -1,13 +1,6 @@
-import React from "react";
+import React, { FC } from "react";
 
-import {
-  Card,
-  Button,
-  CardHeader,
-  CardBody,
-  Image,
-  Chip,
-} from "@nextui-org/react";
+import { Card, CardBody, Image, Chip } from "@heroui/react";
 import { Link } from "react-router-dom";
 import Icons, { getIcon } from "../assests";
 
