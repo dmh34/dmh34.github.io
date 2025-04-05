@@ -1,4 +1,3 @@
-import "../../src/output.css";
 import { getIcon } from "../assests";
 import Nav from "../components/Nav.component";
 import AboutData from "../util/about.util";
@@ -7,15 +6,13 @@ import { Avatar, Button, Link } from "@heroui/react";
 
 function About() {
   return (
-    <div className="grid grid-cols-5 gap-5">
-      <div className="col-span-full">
-        <Nav />
-      </div>
+    <div>
+      <Nav />
       <div className="col-span-5 flex justify-center">
         <Avatar
           src="https://i.pravatar.cc/300"
           alt="Avatar"
-          className=" shadow-primary h-48 w-48 shadow-md"
+          className=" shadow-primary h-48 w-48 shadow-md gap-10"
         />
       </div>
       <div className="col-span-5 flex justify-center gap-4">
@@ -31,15 +28,16 @@ function About() {
           </Link>
         ))}
       </div>
-
-      <div className="col-span-5 flex justify-center">
-        <h2 className="text-3xl shadow-primary">About</h2>
-      </div>
-      <div className="col-start-2 col-end-5 flex justify-center text-center">
-        <p>{AboutData.BrandStatment}</p>
-      </div>
-      <div className="col-start-2 col-end-5 flex justify-center text-center">
-        <p>{AboutData.AboutMeHobbies}</p>
+      <div className="container mx-auto justify-center">
+        <div className="flex justify-center">
+          <h2 className="text-3xl shadow-primary">About</h2>
+        </div>
+        <div className="flex justify-center text-center mx-5">
+          <p>{AboutData.BrandStatment}</p>
+        </div>
+        <div className="flex justify-center text-center mx-5">
+          <p>{AboutData.AboutMeHobbies}</p>
+        </div>
       </div>
     </div>
   );
